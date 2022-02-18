@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doller Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16 font-semibold text-lime-500">
+            Our Doller Bank!!!
+        </h1>
+    </header>
+
+    <section class="flex items-center mt-8 mx-8 sm:flex md:flex">
+        <div>
+            <img src="doller.jpg" alt="flex items-center" />
+        </div>
+        </div>
+        <div class="text-center">
+            <h3 class="text-2xl font-semibold">Income</h3>
+            <div>
+                <p>
+                    income:<input id="income" class="border block b order-gray-400 rounded w-3/4 mb-4 px-2" type="text"
+                        placeholder="0000" />
+                </p>
+            </div>
+
+
+            <h3 class="mt-8 text-2xl font-semibold">Expenses</h3>
+            <div class="mt-4">
+
+                <div class="flex items-center">
+                    <div><label for="food-box">Food: </div>
+                    </label><input class="bg-gray-200 border block b order-gray-400 rounded w-3/4 mb-4 px-2" id="food"
+                        placeholder="000" type="text" />
+                </div>
+
+                <div class="flex items-center">
+                    <div><label for="food-box">Rent: </div>
+                    </label><input class="bg-gray-200 border block b order-gray-400 rounded w-3/4 mb-4 px-2" id="rent"
+                        placeholder="000" type="text" />
+                </div>
+
+                <div class="flex items-center">
+                    <div><label for="food-box">Clothes: </div>
+                    </label><input class="bg-gray-200 border block b order-gray-400 rounded w-3/4 mb-4 px-2"
+                        id="clothes" placeholder="000" type="text" />
+                </div>
+
+
+                <button id="calculate" class="bg-green-400 px-6 rounded py-2 text-white font-medium">
+                    CALCULATE
+                </button>
+
+                <h3 class="mt-8 text-2xl font-semibold">
+                    Tota Expenses: <span id="my_expense">00</span>
+                </h3>
+
+                <h3 class="mt-8 text-2xl font-semibold">
+                    Balance: <span id="my_balance">00</span>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- script -->
+    <script src="./app.js"></script>
+</body>
+
+</html>
